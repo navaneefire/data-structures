@@ -16,11 +16,22 @@ public class LinkedList
 		}
 		return baseNode;
 	}
+	public static void insertNode(Node list,int value)
+	{
+		Node temp =list;
+		while(temp.node!=null)
+		{
+			temp=temp.node;
+		}
+		Node node = new Node();
+		node.value=value;
+		temp.node=node;
+	}
 	public static void printLinkedList(Node list)
 	{
 		while(list!=null)
 		{
-			System.out.print("hascode = "+list.hashCode()+"value = "+list.value+"\t");
+			System.out.print("hashcode = "+list.hashCode()+"value = "+list.value+"\t");
 			list=list.node;
 		}
 	}
