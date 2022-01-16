@@ -112,9 +112,9 @@ public class LinkedList
 	{
 		Node list = createDummmyLinkedList(10);
 		printLinkedList(list);
-		insertAtGivenPosition(list,7,89);
+		list = insertAtGivenPosition(list,7,89);
 		printLinkedList(list);
-		insertAtGivenPosition(list,1,1);
+		list = insertAtGivenPosition(list,1,1);
 		printLinkedList(list);
 	}
 }
